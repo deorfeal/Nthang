@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rubik:ital,wght@0,500;1,400&display=swap"
         rel="stylesheet">
@@ -21,24 +24,24 @@
             <div class="product__swiper product-swiper swiper">
                 <div class="swiper-wrapper">
                     <div class="product-swiper__slide product-slide swiper-slide">
-                        <div class="product-slide__img">
+                        <a class="product-slide__img" data-fancybox="gallery" href="images/card-img-1.png">
                             <img class="product-slide__img-image" src="images/card-img-1.png" alt="img">
-                        </div>
+                        </a>
                     </div>
                     <div class="product-swiper__slide product-slide swiper-slide">
-                        <div class="product-slide__img">
+                        <a class="product-slide__img" data-fancybox="gallery" href="images/card-img-1.png">
                             <img class="product-slide__img-image" src="images/card-img-1.png" alt="img">
-                        </div>
+                        </a>
                     </div>
                     <div class="product-swiper__slide product-slide swiper-slide">
-                        <div class="product-slide__img">
+                        <a class="product-slide__img" data-fancybox="gallery" href="images/card-img-1.png">
                             <img class="product-slide__img-image" src="images/card-img-1.png" alt="img">
-                        </div>
+                        </a>
                     </div>
                     <div class="product-swiper__slide product-slide swiper-slide">
-                        <div class="product-slide__img">
+                        <a class="product-slide__img" data-fancybox="gallery" href="images/card-img-1.png">
                             <img class="product-slide__img-image" src="images/card-img-1.png" alt="img">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="product-swiper__pagination swiper-pagination"></div>
@@ -1231,7 +1234,7 @@
                             Константин
                         </p>
                     </div>
-                    <a class="product-info-bottom__link" href="#">
+                    <a class="product-info-bottom__link" data-fancybox="" href="#popup">
                         <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 6V16C17 20 16 21 12 21H6C2 21 1 20 1 16V6C1 2 2 1 6 1H12C16 1 17 2 17 6Z"
                                 stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1248,8 +1251,15 @@
                 </div>
             </div>
         </section>
+
+        <div class="main__popup popup" id="popup">
+            <p class="popup__text">
+                Контактные данные были отправлены в ваши личные сообщения
+            </p>
+        </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
